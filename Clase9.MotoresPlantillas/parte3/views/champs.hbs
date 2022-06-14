@@ -1,0 +1,16 @@
+{{> nav}}
+<h2>Camepones sugeridos: </h2>
+{{> suggestedChamps}}
+
+
+<h2>Campeones: </h2>
+{{#if hasAny}}
+    <ul>
+        {{#each champs}}
+            <li>
+                Nombre: {{this.name}} <br>
+                Apellido: {{this.lastname}}
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}
