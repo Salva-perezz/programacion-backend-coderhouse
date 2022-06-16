@@ -1,0 +1,13 @@
+    <% if(personas.length) { %> 
+        <ul>
+        <% personas.map(persona => { %> 
+            <li>
+                Nombre: <%= persona.nombre %> <br>
+                Apellido: <%= persona.apellido %> <br>
+                Edad: <%= persona.edad %> 
+            </li>
+        <% }) %> 
+        </ul>
+    <% } else { %> 
+        <p style="color: red;">No hay ninguna persona :(</p>
+    <% } %> 
