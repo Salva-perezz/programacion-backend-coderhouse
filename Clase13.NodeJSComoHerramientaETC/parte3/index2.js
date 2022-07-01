@@ -1,0 +1,1 @@
+import { miFunc, miFunc2 } from "./index";
