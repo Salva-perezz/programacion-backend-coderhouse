@@ -1,13 +1,19 @@
 import express from "express";
 import session from "express-session";
+import sessionFileStore from "session-file-store";
 
 const app = express();
+const FileStore = sessionFileStore(session);
 
 app.use(
   session({
+    store: new FileStore({ path: "./sesiones", ttl: 5, retries: 0 }),
     secret: "Salvaaaa",
     resave: false,
     saveUninitialized: true,
+    cookie: {
+      maxAge: 5000,
+    },
   })
 );
 

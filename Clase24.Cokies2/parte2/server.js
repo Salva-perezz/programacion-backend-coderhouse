@@ -1,13 +1,21 @@
 import express from "express";
 import session from "express-session";
+import redis from "redis";
+import connectRedis from "connect-redis";
 
 const app = express();
+const client = redis.createClient();
+const RedisStore = connectRedis(session);
 
 app.use(
   session({
+    store: new RedisStore({ host: "localhost", port: 6379, client, ttl: 60 }),
     secret: "Salvaaaa",
     resave: false,
     saveUninitialized: true,
+    cookie: {
+      maxAge: 60000,
+    },
   })
 );
 
