@@ -1,0 +1,391 @@
+Statistical profiling result from slow-v8.log, (1704 ticks, 13 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     12    0.7%          /usr/lib/system/libsystem_pthread.dylib
+     12    0.7%          /usr/lib/system/libsystem_c.dylib
+     10    0.6%          /usr/lib/system/libsystem_platform.dylib
+      8    0.5%          /usr/lib/system/libsystem_malloc.dylib
+      5    0.3%          /usr/lib/system/libsystem_m.dylib
+      4    0.2%          /usr/lib/libc++.1.dylib
+      1    0.1%          /usr/lib/system/libsystem_kernel.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     80    4.7%    4.8%  LazyCompile: *calcularRandoms /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:4:25
+     15    0.9%    0.9%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~]))
+      4    0.2%    0.2%  LazyCompile: *groupArrayElements node:internal/util/inspect:1338:28
+      2    0.1%    0.1%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      2    0.1%    0.1%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.1%    0.1%  LazyCompile: *formatValue node:internal/util/inspect:745:21
+      2    0.1%    0.1%  LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+      2    0.1%    0.1%  LazyCompile: *formatArray node:internal/util/inspect:1634:21
+      2    0.1%    0.1%  Function: ^send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      1    0.1%    0.1%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.1%    0.1%  LazyCompile: *onwrite node:internal/streams/writable:425:17
+      1    0.1%    0.1%  LazyCompile: *fastparse /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/parseurl/index.js:95:20
+      1    0.1%    0.1%  LazyCompile: *emit node:events:475:44
+      1    0.1%    0.1%  Function: ^write_ node:_http_outgoing:730:16
+      1    0.1%    0.1%  Function: ^value node:internal/console/constructor:258:20
+      1    0.1%    0.1%  Function: ^toPathIfFileURL node:internal/url:1499:25
+      1    0.1%    0.1%  Function: ^setCharset /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/utils.js:248:41
+      1    0.1%    0.1%  Function: ^set /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/application.js:359:23
+      1    0.1%    0.1%  Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    0.1%    0.1%  Function: ^parseExtendedQueryString /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/utils.js:289:34
+      1    0.1%    0.1%  Function: ^once node:events:660:44
+      1    0.1%    0.1%  Function: ^normalizeString node:path:66:25
+      1    0.1%    0.1%  Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+      1    0.1%    0.1%  Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/index.js:177:16
+      1    0.1%    0.1%  Function: ^isInstanceof node:internal/util/inspect:559:22
+      1    0.1%    0.1%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:433:34
+      1    0.1%    0.1%  Function: ^getConstructorName node:internal/util/inspect:567:28
+      1    0.1%    0.1%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.1%    0.1%  Function: ^get node:internal/streams/writable:787:8
+      1    0.1%    0.1%  Function: ^fromString node:buffer:432:20
+      1    0.1%    0.1%  Function: ^finalhandler /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/finalhandler/index.js:77:23
+      1    0.1%    0.1%  Function: ^etag /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/etag/index.js:70:15
+      1    0.1%    0.1%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      1    0.1%    0.1%  Function: ^checkListener node:events:258:23
+      1    0.1%    0.1%  Function: ^append node:internal/linkedlist:30:16
+      1    0.1%    0.1%  Function: ^_storeHeader node:_http_outgoing:374:22
+      1    0.1%    0.1%  Function: ^Readable.resume node:internal/streams/readable:963:37
+      1    0.1%    0.1%  Function: ^IncomingMessage node:_http_incoming:51:25
+      1    0.1%    0.1%  Function: ^<anonymous> node:internal/validators:236:42
+
+ [C++]:
+   ticks  total  nonlib   name
+   1260   73.9%   76.3%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     53    3.1%    3.2%  T ___bsdthread_terminate
+     26    1.5%    1.6%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    1.2%    1.2%  t node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    1.2%    1.2%  T _sigprocmask
+     19    1.1%    1.2%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     17    1.0%    1.0%  T _posix_spawnattr_setflags
+     12    0.7%    0.7%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    0.7%    0.7%  T ___libplatform_init
+     11    0.6%    0.7%  T _mach_port_insert_member
+      8    0.5%    0.5%  t ___pfz_setup
+      5    0.3%    0.3%  T __kernelrpc_mach_port_move_member_trap
+      4    0.2%    0.2%  T _mach_port_extract_member
+      3    0.2%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      3    0.2%    0.2%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      3    0.2%    0.2%  T _mach_timebase_info_trap
+      2    0.1%    0.1%  t __os_once_gate_wait
+      2    0.1%    0.1%  t __os_nospin_lock_unlock_slow
+      2    0.1%    0.1%  t __os_nospin_lock_lock_slow
+      2    0.1%    0.1%  T _mach_port_insert_right
+      2    0.1%    0.1%  T _connect$NOCANCEL
+      1    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      1    0.1%    0.1%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
+      1    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::InternalCallbackScope::~InternalCallbackScope()
+      1    0.1%    0.1%  T _task_set_special_port
+      1    0.1%    0.1%  T _task_restartable_ranges_register
+      1    0.1%    0.1%  T _os_unfair_recursive_lock_lock_with_options
+      1    0.1%    0.1%  T _mach_vm_protect
+      1    0.1%    0.1%  T __os_semaphore_dispose
+      1    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+      1    0.1%    0.1%  T ___pthread_init
+
+ [Summary]:
+   ticks  total  nonlib   name
+    141    8.3%    8.5%  JavaScript
+   1498   87.9%   90.7%  C++
+    184   10.8%   11.1%  GC
+     52    3.1%          Shared libraries
+     13    0.8%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   1154   90.7%   67.7%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     26    2.0%    1.5%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    1.6%    1.2%  t node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+     19    1.5%    1.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    0.9%    0.7%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    0.9%    0.7%  T ___libplatform_init
+      7    0.5%    0.4%  t ___pfz_setup
+      5    0.4%    0.3%  T _sigprocmask
+      4    0.3%    0.2%  T _mach_port_extract_member
+      4    0.3%    0.2%  T __kernelrpc_mach_port_move_member_trap
+      3    0.2%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      3    0.2%    0.2%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t __os_nospin_lock_lock_slow
+      1    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T _mach_port_insert_member
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1260   73.9%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    421   33.4%    LazyCompile: *calcularRandoms /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:4:25
+    420   99.8%      Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+    420  100.0%        Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+    418   99.5%          Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+    418  100.0%            Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:98:45
+    146   11.6%    Function: ^stringify /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:1145:20
+    146  100.0%      Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+    146  100.0%        Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+    146  100.0%          Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+    146  100.0%            Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+    110    8.7%    Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+    110  100.0%      Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+    108   98.2%        Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+    108  100.0%          Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:98:45
+     95   88.0%            LazyCompile: *next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/index.js:177:16
+     13   12.0%            Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+      2    1.8%        LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+      2  100.0%          Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:98:45
+      2  100.0%            Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+     71    5.6%    t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     38   53.5%      LazyCompile: *calcularRandoms /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:4:25
+     38  100.0%        Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+     38  100.0%          Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+     38  100.0%            Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+     13   18.3%      LazyCompile: *groupArrayElements node:internal/util/inspect:1338:28
+     11   84.6%        Function: ^reduceToSingleString node:internal/util/inspect:1902:30
+     10   90.9%          Function: ^formatRaw node:internal/util/inspect:820:19
+      9   90.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      1   10.0%            Function: ^formatValue node:internal/util/inspect:745:21
+      1    9.1%          LazyCompile: ~formatRaw node:internal/util/inspect:820:19
+      1  100.0%            Function: ^formatValue node:internal/util/inspect:745:21
+      2   15.4%        LazyCompile: *reduceToSingleString node:internal/util/inspect:1902:30
+      2  100.0%          LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      2  100.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      5    7.0%      LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+      5  100.0%        LazyCompile: *formatArray node:internal/util/inspect:1634:21
+      5  100.0%          Function: ^formatRaw node:internal/util/inspect:820:19
+      5  100.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      2    2.8%      Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      2  100.0%        Function: ^<anonymous> node:_http_outgoing:564:45
+      2  100.0%          Function: ^setHeader node:_http_outgoing:574:57
+      2  100.0%            Function: ^header /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:777:29
+      1    1.4%      LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:507:36
+      1  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      1    1.4%      LazyCompile: ~format /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/content-type/index.js:65:17
+      1  100.0%        LazyCompile: ~setCharset /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/utils.js:248:41
+      1  100.0%          LazyCompile: ~send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      1  100.0%            LazyCompile: ~json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+      1    1.4%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:997:36
+      1    1.4%      LazyCompile: ~<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/debug/src/node.js:34:64
+      1  100.0%        t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%          Function: ~<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.4%      LazyCompile: *next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/index.js:177:16
+      1  100.0%        Function: ^expressInit /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/index.js:293:23
+      1    1.4%      LazyCompile: *end node:_http_outgoing:833:45
+      1  100.0%        LazyCompile: *send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      1  100.0%          Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+      1  100.0%            Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+      1    1.4%      Function: ^header /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:777:29
+      1  100.0%        Function: ^send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      1  100.0%          Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+      1  100.0%            Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+      1    1.4%      Function: ^formatWithOptionsInternal node:internal/util/inspect:2048:35
+      1  100.0%        Function: ^formatWithOptions node:internal/util/inspect:2024:27
+      1  100.0%          Function: ^value node:internal/console/constructor:321:20
+      1  100.0%            Function: ^log node:internal/console/constructor:359:6
+      1    1.4%      Function: ^format /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/content-type/index.js:65:17
+      1  100.0%        LazyCompile: *send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      1  100.0%          Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+      1  100.0%            Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+      1    1.4%      Function: ^checkIsHttpToken node:_http_common:221:26
+      1  100.0%        Function: ^<anonymous> node:_http_outgoing:558:44
+      1  100.0%          Function: ^setHeader node:_http_outgoing:574:57
+      1  100.0%            Function: ^header /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:777:29
+      1    1.4%      Function: ^calcularRandoms /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:4:25
+      1  100.0%        LazyCompile: ~<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+      1  100.0%          LazyCompile: ~handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+      1    1.4%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.4%      Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+      1  100.0%        Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:98:45
+     70    5.6%    Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     70  100.0%      Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     45   64.3%        LazyCompile: *_write node:internal/streams/writable:283:16
+     45  100.0%          Function: ^Writable.write node:internal/streams/writable:333:36
+     45  100.0%            Function: ^value node:internal/console/constructor:258:20
+     24   34.3%        Function: ^Socket._writeGeneric node:net:791:42
+     24  100.0%          Function: ^Socket._write node:net:828:35
+     24  100.0%            Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      1    1.4%        LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%          Function: ^_write node:internal/streams/writable:283:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:333:36
+     25    2.0%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     22   88.0%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      7   31.8%        Function: ~<anonymous> node:crypto:1:1
+      7  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3   13.6%        Function: ~<anonymous> node:http:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2    9.1%        Function: ~<anonymous> node:child_process:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    9.1%        Function: ~<anonymous> node:_http_client:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1  100.0%          LazyCompile: ~get node:crypto:287:8
+      1  100.0%            t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    4.5%        LazyCompile: ~lazyLoadStreams node:fs:2858:25
+      1  100.0%          LazyCompile: ~get ReadStream node:fs:3001:17
+      1  100.0%            t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    4.5%        Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:_http_server:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    8.0%      Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2  100.0%        Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    4.0%      LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%        LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:997:36
+     17    1.3%    LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     17  100.0%      LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3   17.6%        Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      3  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3   17.6%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      3  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2   11.8%        LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:477:29
+      2  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      2  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2   11.8%        Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    5.9%        Function: ~<anonymous> node:net:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    5.9%        Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    5.9%        Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    5.9%        Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    5.9%        Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    5.9%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    5.9%        Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     13    1.0%    LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+     12   92.3%      LazyCompile: *formatArray node:internal/util/inspect:1634:21
+     12  100.0%        Function: ^formatRaw node:internal/util/inspect:820:19
+     12  100.0%          LazyCompile: *formatValue node:internal/util/inspect:745:21
+     11   91.7%            Function: ^inspect node:internal/util/inspect:292:17
+      1    8.3%            LazyCompile: *inspect node:internal/util/inspect:292:17
+      1    7.7%      LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      1  100.0%        LazyCompile: *formatValue node:internal/util/inspect:745:21
+      1  100.0%          LazyCompile: *inspect node:internal/util/inspect:292:17
+      1  100.0%            Function: ^formatWithOptionsInternal node:internal/util/inspect:2048:35
+
+     80    4.7%  LazyCompile: *calcularRandoms /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:4:25
+     80  100.0%    Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+     80  100.0%      Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+     79   98.8%        Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+     79  100.0%          Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:98:45
+     71   89.9%            LazyCompile: *next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/index.js:177:16
+      8   10.1%            Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+      1    1.3%        LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+      1  100.0%          Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:98:45
+      1  100.0%            Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+
+     53    3.1%  T ___bsdthread_terminate
+
+     26    1.5%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+     26  100.0%    Function: ^fromStringFast node:buffer:413:24
+     26  100.0%      Function: ^fromString node:buffer:432:20
+     16   61.5%        Function: ^from node:buffer:296:28
+     16  100.0%          Function: ^send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+     16  100.0%            Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+     10   38.5%        LazyCompile: *send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+     10  100.0%          Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+     10  100.0%            Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+
+     20    1.2%  t node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+     20  100.0%    Function: ^fromStringFast node:buffer:413:24
+     20  100.0%      Function: ^fromString node:buffer:432:20
+     17   85.0%        Function: ^from node:buffer:296:28
+     17  100.0%          Function: ^send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+     17  100.0%            Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+      3   15.0%        LazyCompile: *send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      3  100.0%          Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+      3  100.0%            Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+
+     20    1.2%  T _sigprocmask
+      1    5.0%    t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%      Function: ^parse /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/content-type/index.js:106:16
+      1  100.0%        Function: ^setCharset /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/utils.js:248:41
+      1  100.0%          Function: ^send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^json /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:250:25
+      1    5.0%    LazyCompile: ~processPromiseRejections node:internal/process/promises:211:34
+      1  100.0%      Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    5.0%    LazyCompile: ~onStreamRead node:internal/stream_base_commons:167:22
+      1    5.0%    LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%      LazyCompile: ~entitytag /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/etag/index.js:39:20
+      1  100.0%        LazyCompile: ~etag /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/etag/index.js:70:15
+      1  100.0%          LazyCompile: ~generateETag /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/utils.js:273:32
+      1  100.0%            LazyCompile: ~send /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/response.js:111:25
+      1    5.0%    LazyCompile: *calcularRandoms /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:4:25
+      1  100.0%      Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/server.js:13:26
+      1  100.0%        Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/ejercicios/1/node_modules/express/lib/router/route.js:98:45
+
+     19    1.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     18   94.7%    Function: ^compileFunction node:vm:308:25
+     16   88.9%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     16  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      9   56.3%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      9  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      7   43.8%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      7  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2   11.1%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      2  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      2  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   50.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1   50.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    5.3%    LazyCompile: ~compileFunction node:vm:308:25
+      1  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+

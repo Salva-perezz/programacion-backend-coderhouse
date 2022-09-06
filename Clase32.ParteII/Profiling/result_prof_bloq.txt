@@ -1,0 +1,104 @@
+Statistical profiling result from bloq-v8.log, (16905 ticks, 1 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     11    0.1%          /usr/lib/system/libsystem_pthread.dylib
+      8    0.0%          /usr/lib/system/libsystem_malloc.dylib
+      6    0.0%          /usr/lib/libc++.1.dylib
+      5    0.0%          /usr/lib/system/libsystem_c.dylib
+      2    0.0%          /usr/lib/system/libsystem_platform.dylib
+      2    0.0%          /usr/lib/system/libsystem_kernel.dylib
+      1    0.0%          /usr/lib/libobjc.A.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    0.0%    0.0%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      1    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      1    0.0%    0.0%  Function: ^resetBuffer node:internal/streams/writable:202:21
+      1    0.0%    0.0%  Function: ^nop node:internal/streams/writable:73:13
+      1    0.0%    0.0%  Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/index.js:177:16
+      1    0.0%    0.0%  Function: ^matchLayer /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/index.js:583:20
+      1    0.0%    0.0%  Function: ^join node:path:1166:7
+      1    0.0%    0.0%  Function: ^isUint32 node:internal/validators:40:18
+      1    0.0%    0.0%  Function: ^isURLInstance node:internal/url:1495:23
+      1    0.0%    0.0%  Function: ^hasHooks node:internal/async_hooks:471:18
+      1    0.0%    0.0%  Function: ^getTimerDuration node:internal/timers:383:26
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/pre_execution:382:8
+      1    0.0%    0.0%  Function: ^fresh /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/fresh/index.js:33:16
+      1    0.0%    0.0%  Function: ^_writeRaw node:_http_outgoing:344:19
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:101:40
+      1    0.0%    0.0%  Function: ^<anonymous> node:_http_outgoing:558:44
+
+ [C++]:
+   ticks  total  nonlib   name
+  16761   99.1%   99.4%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.1%    0.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     21    0.1%    0.1%  T _posix_spawnattr_setflags
+     19    0.1%    0.1%  T _sigprocmask
+     10    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  T __kernelrpc_mach_port_move_member_trap
+      2    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
+      1    0.0%    0.0%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t __os_nospin_lock_unlock_slow
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::Environment::RunAndClearNativeImmediates(bool)
+      1    0.0%    0.0%  T _mach_timebase_info_trap
+      1    0.0%    0.0%  T _mach_port_insert_right
+      1    0.0%    0.0%  T _mach_port_insert_member
+      1    0.0%    0.0%  T __kernelrpc_mach_port_get_refs
+      1    0.0%    0.0%  T ___libplatform_init
+      1    0.0%    0.0%  T ___bsdthread_terminate
+
+ [Summary]:
+   ticks  total  nonlib   name
+     16    0.1%    0.1%  JavaScript
+  16853   99.7%   99.9%  C++
+     22    0.1%    0.1%  GC
+     35    0.2%          Shared libraries
+      1    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  16739   99.7%   99.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.1%    0.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.1%    0.1%  T _sigprocmask
+     10    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  T __kernelrpc_mach_port_move_member_trap
+      2    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      1    0.0%    0.0%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T __kernelrpc_mach_port_get_refs
+      1    0.0%    0.0%  T ___libplatform_init
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  16761   99.1%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+  16229   96.8%    Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+  16162   99.6%      Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/server.js:32:23
+  16162  100.0%        Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/layer.js:86:49
+  15959   98.7%          Function: ^next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:116:16
+  15959  100.0%            Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:98:45
+    203    1.3%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:116:16
+    203  100.0%            Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:98:45
+    312    1.9%    LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+    270   86.5%      LazyCompile: ~<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/server.js:32:23
+    201   74.4%        Function: ^handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/layer.js:86:49
+    201  100.0%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:116:16
+    201  100.0%            LazyCompile: ~dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:98:45
+     69   25.6%        LazyCompile: ~handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/layer.js:86:49
+     69  100.0%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:116:16
+     69  100.0%            LazyCompile: ~dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:98:45
+     42   13.5%      LazyCompile: ~<anonymous> /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/server.js:14:21
+     42  100.0%        LazyCompile: ~handle /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/layer.js:86:49
+     42  100.0%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:116:16
+     42  100.0%            LazyCompile: ~dispatch /Users/salvadorperez/Desktop/Coderhouse/programacion-backend-coderhouse/Clase32.ParteII/Profiling/node_modules/express/lib/router/route.js:98:45
+

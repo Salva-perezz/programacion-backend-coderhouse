@@ -1,0 +1,7 @@
+[2022-08-29T22:13:43.531] [INFO] prod - Servidor express escuchando en el puerto 3000
+[2022-08-29T22:13:52.203] [ERROR] prod - Parámetros incorrectos para la suma
+[2022-08-29T22:14:08.418] [WARN] prod - Ruta GET /sumart no implementada
+[2022-08-29T22:14:37.777] [INFO] prod - Servidor express escuchando en el puerto 3000
+[2022-08-29T22:14:47.689] [ERROR] prod - Parámetros incorrectos para la suma
+[2022-08-29T22:15:08.734] [INFO] prod - Servidor express escuchando en el puerto 3000
+[2022-08-29T22:15:10.746] [FATAL] prod - Parámetros incorrectos para la suma
