@@ -97,7 +97,7 @@ const deleteProduct = async (req, res) => {
 
     await awsService.sns
       .publish({
-        Message: `Product deleted: ${product}`,
+        Message: `Product deleted: ${dynamodbResponse}`,
         Subject: "Delete product",
         TopicArn: SNS_TOPIC_ARN,
       })
