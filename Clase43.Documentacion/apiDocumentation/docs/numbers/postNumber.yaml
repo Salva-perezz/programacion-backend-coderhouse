@@ -1,0 +1,11 @@
+paths:
+  /number:
+    post:
+      summary: Add one number to the list
+      tags:
+        - Numbers
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: "#/components/schemas/Number"

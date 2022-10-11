@@ -1,0 +1,21 @@
+components:
+  schemas:
+    NumberRequestBody:
+      type: object
+      required: true
+      properties:
+        number:
+          type: number
+    Number:
+      type: object
+      required: true
+      properties:
+        id:
+          type: number
+          description: Number ID
+        number:
+          type: number
+          description: A number
+      example:
+        id: 82
+        number: 100
